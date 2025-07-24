@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Robot-Coupe Рецептурник</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Рецепты от Robot-Coupe</h1>
+    <p>Инновации на кухне. Вдохновение — здесь.</p>
+  </header>
+
+  <div class="filter-buttons">
+    <button onclick="filterRecipes('all')">Все</button>
+    <button onclick="filterRecipes('sweet')">Сладкие</button>
+    <button onclick="filterRecipes('savory')">Несладкие</button>
+  </div>
+
+  <main class="grid">
+
+    <div class="recipe-card sweet">
+      <img src="images/pancake.jpg" alt="Панкейки">
+      <div class="text">
+        <h2>Пышные панкейки</h2>
+        <p>20 минут · Сладкое</p>
+        <a href="recipes/pancake.html">Подробнее</a>
+      </div>
+    </div>
+
+    <div class="recipe-card sweet">
+      <img src="images/brownie.jpg" alt="Брауни">
+      <div class="text">
+        <h2>Брауни</h2>
+        <p>30 минут · Сладкое</p>
+        <a href="recipes/brownie.html">Подробнее</a>
+      </div>
+    </div>
+
+    <div class="recipe-card sweet">
+      <img src="images/lemon_curd.jpg" alt="Лимонный курд">
+      <div class="text">
+        <h2>Лимонный курд</h2>
+        <p>25 минут · Сладкое</p>
+        <a href="recipes/lemon_curd.html">Подробнее</a>
+      </div>
+    </div>
+
+    <div class="recipe-card sweet">
+      <img src="images/bird_milk.jpg" alt="Птичье молоко">
+      <div class="text">
+        <h2>Птичье молоко</h2>
+        <p>1 час · Сладкое</p>
+        <a href="recipes/bird_milk.html">Подробнее</a>
+      </div>
+    </div>
+
+    <div class="recipe-card sweet">
+      <img src="images/zephyr.jpg" alt="Зефир">
+      <div class="text">
+        <h2>Зефир</h2>
+        <p>2 часа · Сладкое</p>
+        <a href="recipes/zephyr.html">Подробнее</a>
+      </div>
+    </div>
+
+    <div class="recipe-card savory">
+      <img src="images/pizza.jpg" alt="Пицца">
+      <div class="text">
+        <h2>Пицца</h2>
+        <p>40 минут · Несладкое</p>
+        <a href="#">Подробнее</a>
+      </div>
+    </div>
+
+    <div class="recipe-card savory">
+      <img src="images/cutlets.jpg" alt="Котлеты">
+      <div class="text">
+        <h2>Куриные котлеты</h2>
+        <p>35 минут · Несладкое</p>
+        <a href="#">Подробнее</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Robot-Coupe</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

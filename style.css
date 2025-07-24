@@ -1,0 +1,96 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #202020;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.filter-buttons button {
+  padding: 0.6rem 1.2rem;
+  background: #efefef;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filter-buttons button:hover {
+  background: #ddd;
+}
+
+.grid {
+  columns: 1;
+  column-gap: 1rem;
+  padding: 1rem;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    columns: 2;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid {
+    columns: 3;
+  }
+}
+
+.recipe-card {
+  background: white;
+  display: inline-block;
+  margin: 0 0 1rem;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  break-inside: avoid;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-card img {
+  width: 100%;
+  display: block;
+}
+
+.recipe-card .text {
+  padding: 1rem;
+}
+
+.recipe-card h2 {
+  margin: 0 0 0.5rem;
+}
+
+.recipe-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #cc0000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  background: #eee;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
